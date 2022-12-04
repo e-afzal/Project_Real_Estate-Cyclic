@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dfefdad3.chunk.css",
+    "main.js": "/static/js/main.c6cc2136.chunk.js",
+    "main.js.map": "/static/js/main.c6cc2136.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ee9aa4a0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ee9aa4a0.js.map",
+    "static/css/2.5b2610cd.chunk.css": "/static/css/2.5b2610cd.chunk.css",
+    "static/js/2.1207749f.chunk.js": "/static/js/2.1207749f.chunk.js",
+    "static/js/2.1207749f.chunk.js.map": "/static/js/2.1207749f.chunk.js.map",
+    "static/js/3.6ca81a42.chunk.js": "/static/js/3.6ca81a42.chunk.js",
+    "static/js/3.6ca81a42.chunk.js.map": "/static/js/3.6ca81a42.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.5b2610cd.chunk.css.map": "/static/css/2.5b2610cd.chunk.css.map",
+    "static/css/main.dfefdad3.chunk.css.map": "/static/css/main.dfefdad3.chunk.css.map",
+    "static/js/2.1207749f.chunk.js.LICENSE.txt": "/static/js/2.1207749f.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/static/media/Teal-sky2.3fa13220.jpg",
+    "static/media/Al-Barari.11345908.jpg": "/static/media/Al-Barari.11345908.jpg",
+    "static/media/Home3.ab6c8585.png": "/static/media/Home3.ab6c8585.png",
+    "static/media/Palm-Jumeirah.41bb00f7.jpg": "/static/media/Palm-Jumeirah.41bb00f7.jpg",
+    "static/media/Wolfram-Homepage-Mobile-Tinified.bfa4c6c3.png": "/static/media/Wolfram-Homepage-Mobile-Tinified.bfa4c6c3.png",
+    "static/media/bath.1dc10413.svg": "/static/media/bath.1dc10413.svg",
+    "static/media/bed-flaticon.d5c70544.svg": "/static/media/bed-flaticon.d5c70544.svg",
+    "static/media/jbr.16d51f45.jpg": "/static/media/jbr.16d51f45.jpg",
+    "static/media/square-ruler-flaticon.96631780.svg": "/static/media/square-ruler-flaticon.96631780.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee9aa4a0.js",
+    "static/css/2.5b2610cd.chunk.css",
+    "static/js/2.1207749f.chunk.js",
+    "static/css/main.dfefdad3.chunk.css",
+    "static/js/main.c6cc2136.chunk.js"
+  ]
+}
