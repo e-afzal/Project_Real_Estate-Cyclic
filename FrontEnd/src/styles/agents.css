@@ -1,0 +1,86 @@
+section#team {
+  padding: 3rem 7rem;
+}
+section#team h1 {
+  text-align: center;
+  font-family: "ANC-Medium";
+  color: #31343a;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+section#team hr {
+  margin: 1.5rem 0 3rem 0;
+}
+section#team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+section#team .team-grid a.agent-box img {
+  width: 100%;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+section#team .team-grid a.agent-box img:hover {
+  opacity: 1;
+}
+section#team .team-grid a.agent-box h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2.4rem;
+}
+section#team .team-grid a.agent-box h4 {
+  font-family: "ANC-Regular";
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #999;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1024px) {
+  section#team .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section#team .team-grid a.agent-box img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  section#team .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  section#team .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  section#team {
+    padding: 3rem 4rem;
+  }
+  section#team .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section#team .team-grid a.agent-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#team .team-grid a.agent-box img {
+    max-width: 75%;
+  }
+}

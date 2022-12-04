@@ -1,0 +1,22 @@
+/* SLIDER STYLES */
+#main .swiper-button-prev,
+#main .swiper-button-next {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+/* THUMBNAIL STYLES */
+#thumbs {
+  margin-top: 2px;
+}
+
+#thumbs .swiper-slide {
+  filter: brightness(60%);
+  /* opacity: 0.7; */
+  transition: all 0.4s;
+}
+
+#thumbs .swiper-slide-thumb-active {
+  /* opacity: 1; */
+  filter: brightness(100%);
+}

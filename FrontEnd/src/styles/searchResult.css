@@ -1,0 +1,397 @@
+section#hero-search {
+  padding: 2.5rem 0 2.5rem 0;
+  background-color: #000;
+}
+section#hero-search .nav-flex {
+  padding: 0 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section#hero-search .nav-flex .logo img {
+  display: inline-block;
+  width: 13.5rem;
+}
+section#hero-search .nav-flex .nav-flex-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#hero-search .nav-flex .nav-flex-list a {
+  color: #3a3a3a;
+  font-family: "5-Gilroy-SemiBold";
+  font-size: 1.6rem;
+  margin-left: 3.5rem;
+  letter-spacing: 0.1rem;
+}
+section#hero-search .nav-flex .nav-flex-list a li {
+  color: #f1ece9;
+}
+section#hero-search .nav-flex .nav-flex-list > a:nth-child(1) {
+  margin-left: 0;
+}
+
+section#filter {
+  /* padding: 3rem 7rem; */
+  padding-block: 3rem;
+  padding-inline: 3vw;
+  max-width: 1200px;
+}
+section#filter .form-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 3rem;
+}
+section#filter .form-grid > input#query {
+  padding: 8px 12px;
+  font-family: "ANC-Medium", "Calibri";
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: all 0.4s;
+  grid-column: 5/9;
+  outline: none;
+}
+section#filter .form-grid > select:nth-child(1),
+section#filter .form-grid > select:nth-child(2),
+section#filter .form-grid > select:nth-child(3),
+section#filter .form-grid > select:nth-child(4),
+section#filter .form-grid > select:nth-child(5),
+section#filter .form-grid > select:nth-child(6),
+section#filter .form-grid > select:nth-child(7),
+section#filter .form-grid > select:nth-child(8),
+section#filter .form-grid > select:nth-child(9),
+section#filter .form-grid > select:nth-child(10) {
+  padding: 8px 12px;
+  color: #000;
+  font-family: "ANC-Regular", "Calibri";
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+  border-radius: 5px;
+  grid-column: span 2;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="%2331343a;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+section#filter .form-grid > select:nth-child(1):focus,
+section#filter .form-grid > select:nth-child(1):hover,
+section#filter .form-grid > select:nth-child(2):focus,
+section#filter .form-grid > select:nth-child(2):hover,
+section#filter .form-grid > select:nth-child(3):focus,
+section#filter .form-grid > select:nth-child(3):hover,
+section#filter .form-grid > select:nth-child(4):focus,
+section#filter .form-grid > select:nth-child(4):hover,
+section#filter .form-grid > select:nth-child(5):focus,
+section#filter .form-grid > select:nth-child(5):hover,
+section#filter .form-grid > select:nth-child(6):focus,
+section#filter .form-grid > select:nth-child(6):hover,
+section#filter .form-grid > select:nth-child(7):focus,
+section#filter .form-grid > select:nth-child(7):hover,
+section#filter .form-grid > select:nth-child(8):focus,
+section#filter .form-grid > select:nth-child(8):hover,
+section#filter .form-grid > select:nth-child(9):focus,
+section#filter .form-grid > select:nth-child(9):hover,
+section#filter .form-grid > select:nth-child(10):focus,
+section#filter .form-grid > select:nth-child(10):hover {
+  outline: none;
+  border: 1px solid #bbb;
+}
+section#filter .form-grid > select:nth-child(1) option,
+section#filter .form-grid > select:nth-child(2) option,
+section#filter .form-grid > select:nth-child(3) option,
+section#filter .form-grid > select:nth-child(4) option,
+section#filter .form-grid > select:nth-child(5) option,
+section#filter .form-grid > select:nth-child(6) option,
+section#filter .form-grid > select:nth-child(7) option,
+section#filter .form-grid > select:nth-child(8) option,
+section#filter .form-grid > select:nth-child(9) option,
+section#filter .form-grid > select:nth-child(10) option {
+  font-family: "ANC-Regular", "Calibri";
+  font-size: 16px;
+  color: #31343a;
+}
+section#filter .form-grid button.btn {
+  border: 1px solid #e1e1e1;
+  outline: none;
+}
+section#filter .form-grid button.btn:hover {
+  outline: none;
+  border-radius: 3px;
+  border-color: transparent;
+}
+
+#results {
+  /* padding: 4rem 7rem; */
+  padding-top: 4rem;
+  padding-bottom: 0;
+  color: #31343a;
+}
+#results h3 {
+  letter-spacing: 0;
+  font-weight: 200;
+  max-width: 1200px;
+  padding-inline: 3vw;
+}
+#results .results-flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding-inline: 3vw;
+}
+#results .results-flex > h5:first-child {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  font-family: "ANC-Medium";
+}
+#results .results-flex .flex-sort {
+  display: flex;
+  align-items: center;
+}
+#results .results-flex .flex-sort select#sort {
+  margin-left: 5px;
+  padding: 8px 12px;
+  color: #000;
+  font-family: "ANC-Regular", "Calibri";
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+  border-radius: 5px;
+  grid-column: span 2;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="%2331343a;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+#results .results-flex .flex-sort select#sort:focus,
+#results .results-flex .flex-sort select#sort:hover {
+  outline: none;
+  border: 1px solid #bbb;
+}
+#results .results-flex .flex-sort select#sort option {
+  font-family: "ANC-Regular", "Calibri";
+  font-size: 16px;
+  color: #31343a;
+}
+#results ul.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 4.5rem 3rem;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding-inline: 3vw;
+}
+#results ul.grid li.grid-card {
+  background-color: #f8f5f0;
+  border-radius: 3px;
+  /* grid-column: span 4; */
+  grid-column: span 1;
+  transition: all 0.5s;
+}
+#results ul.grid li.grid-card .card-img {
+  /* background: url("../assets/images/1-Homepage/Latest_Listings/Downtown-Dubai-7717.jpeg")
+    no-repeat center center/cover; */
+  height: 30rem;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  filter: brightness(80%);
+  transition: filter 0.5s;
+}
+#results ul.grid li.grid-card:hover .card-img {
+  filter: brightness(100%);
+}
+#results ul.grid li.grid-card .card-details {
+  padding: 10px 10px 20px 15px;
+}
+#results ul.grid li.grid-card .card-details p {
+  margin-top: 0;
+  font-family: "ANC-Medium";
+}
+#results ul.grid li.grid-card > h5:nth-child(2) {
+  letter-spacing: 0.8px;
+}
+#results ul.grid li.grid-card > h5:nth-child(4) {
+  margin-top: 1rem;
+}
+#results ul.grid li.grid-card .flex-features {
+  margin-top: 1.5rem;
+  display: flex;
+}
+#results ul.grid li.grid-card .flex-features .features-bed,
+#results ul.grid li.grid-card .flex-features .features-bath,
+#results ul.grid li.grid-card .flex-features .features-area {
+  display: flex;
+  margin-right: 2.5rem;
+}
+#results ul.grid li.grid-card .flex-features .features-bed > img,
+#results ul.grid li.grid-card .flex-features .features-bath > img,
+#results ul.grid li.grid-card .flex-features .features-area > img {
+  margin-right: 10px;
+}
+#results ul.grid li.grid-card .flex-features .features-area:last-child {
+  margin-right: 0;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1050px) {
+  #results h3 {
+    max-width: 680px;
+    margin-inline: auto;
+    padding-left: 0;
+  }
+  #results .results-flex {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+  #results ul.grid {
+    grid-template-columns: repeat(2, 320px);
+    max-width: 680px;
+    margin-inline: auto;
+  }
+  #results ul.grid li.grid-card {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  section#filter .form-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  section#filter .form-grid > input#query {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+}
+
+@media (max-width: 830px) {
+  #results ul.grid {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+     overflow: scroll; */
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media (max-width: 750px) {
+  section#filter .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section#filter .form-grid > * {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 730px) {
+  #results .results-flex > h5:first-child {
+    margin-bottom: 2rem;
+  }
+
+  #results .results-flex .flex-sort {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #results h3 {
+    text-align: center;
+    padding-right: 0;
+  }
+  #results .results-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0;
+    margin-inline: auto;
+  }
+  #results ul.grid {
+    grid-template-columns: 310px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  section#hero-search .nav-flex .nav-flex-list {
+    display: none;
+  }
+  section#hero-search .nav-flex {
+    flex-direction: column;
+  }
+
+  #results {
+    /* padding-inline: 4rem; */
+  }
+  section#filter .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #results ul.grid {
+    grid-template-columns: 320px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  section#filter .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section#filter .form-grid > input#query {
+    grid-column: span 1;
+  }
+
+  section#filter .form-grid > select:nth-child(1),
+  section#filter .form-grid > select:nth-child(2),
+  section#filter .form-grid > select:nth-child(3),
+  section#filter .form-grid > select:nth-child(4),
+  section#filter .form-grid > select:nth-child(5),
+  section#filter .form-grid > select:nth-child(6),
+  section#filter .form-grid > select:nth-child(7),
+  section#filter .form-grid > select:nth-child(8),
+  section#filter .form-grid > select:nth-child(9),
+  section#filter .form-grid > select:nth-child(10) {
+    grid-column: span 1;
+  }
+  section#filter .form-grid > * {
+    max-height: 5rem;
+    background-size: cover;
+  }
+
+  #results ul.grid li.grid-card .card-img img {
+    /* width: 100%; */
+  }
+}
+
+@media (max-width: 360px) {
+  section#filter .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    row-gap: 1rem;
+  }
+
+  section#filter .form-grid > input#query {
+    padding: 1rem 1.5rem;
+  }
+
+  #results {
+    /* padding-inline: 3rem; */
+  }
+}

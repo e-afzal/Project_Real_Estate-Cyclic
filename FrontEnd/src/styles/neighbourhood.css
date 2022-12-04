@@ -1,0 +1,236 @@
+section#neighbourhood-page {
+  max-width: 1200px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  padding-inline: clamp(2rem, 5vw, 7rem);
+}
+
+section#neighbourhood-page h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section#neighbourhood-page .summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+section#neighbourhood-page .summary-grid .description {
+  grid-column: span 1;
+  max-width: 80%;
+}
+section#neighbourhood-page .summary-grid .description p:nth-child(1) {
+  margin-top: 0;
+}
+
+section#neighbourhood-page .summary-grid .description p {
+  margin-top: 1rem;
+}
+section#neighbourhood-page .summary-grid .image {
+  grid-column: span 1;
+}
+section#neighbourhood-page .summary-grid .image img {
+  max-width: 90%;
+  border-radius: 5px;
+}
+section#neighbourhood-page .cta-neighbourhood {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-block: 4rem;
+  padding: 2rem 0;
+}
+section#neighbourhood-page .cta-neighbourhood p {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+section#neighbourhood-page .cta-neighbourhood button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+section#neighbourhood-page .neighbourhood-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+section#neighbourhood-page .neighbourhood-grid ul.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4.5rem 5rem;
+  margin: 0 auto;
+}
+section#neighbourhood-page .neighbourhood-grid ul.grid li.grid-card {
+  background-color: #f8f5f0;
+  border-radius: 3px;
+  grid-column: span 4;
+  transition: all 0.5s;
+}
+section#neighbourhood-page .neighbourhood-grid ul.grid li.grid-card .card-img {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 29rem;
+  border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  filter: brightness(80%);
+  transition: filter 0.5s;
+  overflow: hidden;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .card-img
+  img {
+  max-width: 100%;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card:hover
+  .card-img {
+  filter: brightness(100%);
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .card-details {
+  padding: 0px 15px 20px 25px;
+  max-width: 100%;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .card-details
+  p {
+  margin-top: 0;
+  font-family: "ANC-Medium";
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  > h5:nth-child(2) {
+  letter-spacing: 0.8px;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  > h5:nth-child(4) {
+  margin-top: 1rem;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features {
+  margin-top: 1.5rem;
+  display: flex;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-bed,
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-bath,
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-area {
+  display: flex;
+  margin-right: 2.5rem;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-bed
+  > img,
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-bath
+  > img,
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-area
+  > img {
+  margin-right: 10px;
+}
+section#neighbourhood-page
+  .neighbourhood-grid
+  ul.grid
+  li.grid-card
+  .flex-features
+  .features-area:last-child {
+  margin-right: 0;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1150px) {
+  section#neighbourhood-page .neighbourhood-grid ul.grid {
+    grid-template-columns: repeat(2, 320px);
+    justify-content: space-around;
+  }
+  section#neighbourhood-page .neighbourhood-grid ul.grid li.grid-card {
+    grid-column: span 1;
+  }
+}
+@media screen and (max-width: 750px) {
+  section#neighbourhood-page .neighbourhood-grid ul.grid {
+    grid-template-columns: 1fr;
+  }
+  section#neighbourhood-page .neighbourhood-grid ul.grid li.grid-card {
+    width: min(70%, 310px);
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#neighbourhood-page .summary-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+  section#neighbourhood-page .summary-grid .description {
+    max-width: 100%;
+  }
+
+  section#neighbourhood-page .summary-grid .image {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+  section#neighbourhood-page .summary-grid .image img {
+    max-width: 100%;
+  }
+  section#neighbourhood-page .cta-neighbourhood p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section#neighbourhood-page .neighbourhood-grid ul.grid li.grid-card {
+    min-width: 320px;
+  }
+}

@@ -1,0 +1,147 @@
+nav.nav-flex {
+  /* padding: 0 7rem; */
+  /* max-width: 1200px; */
+  /* padding-top: 5rem; */
+  /* padding-bottom: 2rem; */
+  padding-inline: clamp(2rem, 5vw, 7rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 16vh;
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 7vh;
+  /* z-index: 2; */
+  display: none;
+}
+
+nav.nav-flex .logo img {
+  display: inline-block;
+  width: 13.5rem;
+}
+nav.nav-flex .nav-flex-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+nav.nav-flex .nav-flex-list a {
+  color: #3a3a3a;
+  font-family: "5-Gilroy-SemiBold";
+  font-size: 1.6rem;
+  margin-left: 3.5rem;
+  letter-spacing: 0.1rem;
+}
+nav.nav-flex .nav-flex-list a li {
+  color: #f1ece9;
+}
+nav.nav-flex .nav-flex-list > a:nth-child(1) {
+  margin-left: 0;
+}
+
+#menu-overlay {
+  display: none;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+  nav.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    /* z-index: 6; */
+  }
+
+  nav.nav-flex .nav-flex-list {
+    display: none;
+  }
+
+  nav.nav-flex a.logo {
+    margin-inline: auto;
+  }
+
+  /* HAMBURGER MENU below 1024px */
+  /* ONLINE TUTORIALS VIDEO */
+  #menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  #menu-overlay.active {
+    opacity: 1;
+    z-index: 5;
+  }
+
+  nav.nav-flex .menu-btn img {
+    width: 3.5vw;
+  }
+
+  nav.nav-flex .menu-btn {
+    /* z-index: 10; */
+  }
+
+  #menu-overlay ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 22.5vh;
+  }
+  #menu-overlay ul li {
+    position: relative;
+  }
+
+  #menu-overlay ul a li {
+    position: relative;
+    /* font-size: 5.6rem; */
+    font-size: clamp(3rem, 7vw, 5rem);
+    padding-inline: 1rem;
+    color: hsl(0, 0%, 100%);
+  }
+  /* .menu-btn {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 6;
+    cursor: pointer;
+  } */
+  .close-overlay {
+    position: absolute;
+    top: 4.5vh;
+    right: 8vw;
+    /* font-size: 5rem; */
+    cursor: pointer;
+  }
+  .close-overlay img {
+    height: 4vh;
+    /* width: 20vw; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav.nav-flex .menu-btn img {
+    width: 5.5vw;
+  }
+}

@@ -1,0 +1,289 @@
+section#agent {
+  padding: 3rem 7rem;
+}
+section#agent .agent-grid {
+  display: grid;
+  /* grid-template-columns: repeat(8, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(3rem, 5vw, 10rem);
+  max-width: 1000px;
+}
+section#agent .agent-grid .agent-snapshot {
+  /* grid-column: span 2; */
+  grid-column: span 1;
+}
+section#agent .agent-grid .agent-snapshot img {
+  width: 100%;
+}
+section#agent .agent-grid .agent-snapshot > .single-detail:nth-child(3),
+section#agent .agent-grid .agent-snapshot > .single-detail:nth-child(4) {
+  margin-top: 2.3rem;
+}
+section#agent .agent-grid .agent-snapshot > .single-detail:nth-child(2) {
+  margin-top: 2rem;
+}
+section#agent .agent-grid .agent-snapshot .single-detail h3 {
+  font-size: 2rem;
+  margin-bottom: 7px;
+  font-family: "ANC-Medium";
+  letter-spacing: 0;
+}
+section#agent .agent-grid .agent-snapshot .single-detail h4 {
+  font-family: "ANC-Regular";
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: black;
+}
+section#agent .agent-grid .agent-details {
+  /* grid-column: span 6; */
+  grid-column: span 1;
+}
+section#agent .agent-grid .agent-details h1 {
+  font-family: "ANC-Medium";
+  font-size: 3rem;
+  font-weight: 100;
+}
+section#agent .agent-grid .agent-details h2 {
+  font-family: "ANC-Regular";
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: rgba(49, 52, 58, 0.6);
+}
+section#agent .agent-grid .agent-details p {
+  /* font-size: 1.6rem; */
+  margin-top: 1.5rem;
+}
+section#agent .agent-grid .agent-details button {
+  margin-top: 2rem;
+}
+section#agent .agent-grid .agent-details button:hover {
+  padding: 1rem 1.5rem;
+}
+section#agent .agent-grid .agent-details .agent-listings {
+  margin-top: 4rem;
+}
+section#agent .agent-grid .agent-details .agent-listings h2 {
+  font-family: "ANC-Medium";
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: #31343a;
+}
+section#agent .agent-grid .agent-details .agent-listings table.listing-table {
+  color: #000;
+  font-size: 1.5rem;
+  border-collapse: collapse;
+  border-radius: 3.5px 3.5px 0 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  font-family: "ANC-Regular";
+}
+section#agent
+  .agent-grid
+  .agent-details
+  .agent-listings
+  table.listing-table
+  thead
+  tr {
+  background-color: #31343a;
+  color: #fff;
+  font-weight: bold;
+}
+section#agent .agent-grid .agent-details .agent-listings table.listing-table th,
+section#agent
+  .agent-grid
+  .agent-details
+  .agent-listings
+  table.listing-table
+  td {
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+}
+section#agent
+  .agent-grid
+  .agent-details
+  .agent-listings
+  table.listing-table
+  tbody
+  tr {
+  border-bottom: 1px solid #ddd;
+}
+section#agent
+  .agent-grid
+  .agent-details
+  .agent-listings
+  table.listing-table
+  tbody
+  tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+section#agent
+  .agent-grid
+  .agent-details
+  .agent-listings
+  table.listing-table
+  tbody
+  tr:last-of-type {
+  border-bottom: 2px solid #31343a;
+}
+section#agent
+  .agent-grid
+  .agent-details
+  .agent-listings
+  table.listing-table
+  tbody
+  tr
+  a {
+  font-family: "ANC-Medium";
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #31343a;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1000px) {
+  section#agent .agent-grid .agent-details .agent-listings table.listing-table {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section#agent
+    .agent-grid
+    .agent-details
+    .agent-listings
+    table.listing-table
+    thead
+    tr {
+    display: flex;
+    flex-direction: column;
+  }
+  section#agent
+    .agent-grid
+    .agent-details
+    .agent-listings
+    table.listing-table
+    tbody
+    tr {
+    display: flex;
+    flex-direction: column;
+  }
+  section#agent
+    .agent-grid
+    .agent-details
+    .agent-listings
+    table.listing-table
+    tbody
+    tr:last-of-type {
+    border-bottom: none;
+  }
+  #agent
+    > div
+    > div.agent-details
+    > div
+    > table
+    > tbody
+    > tr
+    > td:nth-child(7) {
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  section#agent .agent-grid .agent-snapshot {
+    display: none;
+  }
+
+  section#agent .agent-grid {
+    grid-template-columns: 1fr;
+  }
+  section#agent .agent-grid .agent-details p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  section#agent .agent-grid .agent-details .agent-listings table.listing-table {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section#agent
+    .agent-grid
+    .agent-details
+    .agent-listings
+    table.listing-table
+    thead
+    tr {
+    display: flex;
+    flex-direction: column;
+  }
+  section#agent
+    .agent-grid
+    .agent-details
+    .agent-listings
+    table.listing-table
+    tbody
+    tr {
+    display: flex;
+    flex-direction: column;
+  }
+  section#agent
+    .agent-grid
+    .agent-details
+    .agent-listings
+    table.listing-table
+    tbody
+    tr:last-of-type {
+    border-bottom: none;
+  }
+  #agent
+    > div
+    > div.agent-details
+    > div
+    > table
+    > tbody
+    > tr
+    > td:nth-child(7) {
+    padding: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  section#agent {
+    /* padding-left: 3rem; */
+    padding-inline: 1.5rem;
+  }
+  section#agent .agent-grid .agent-details .agent-listings {
+    /* max-width: 75%; */
+  }
+  section#agent .agent-grid .agent-details p {
+    /* padding-right: 3rem; */
+  }
+}
+
+@media (max-width: 470px) {
+  section#agent .agent-grid .agent-details {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 360px) {
+  section#agent {
+    /* padding: 3rem 4rem; */
+    padding-block: 4rem;
+  }
+  section#agent .agent-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section#agent .agent-grid .agent-snapshot {
+    grid-column: span 1;
+  }
+  section#agent .agent-grid .agent-snapshot .single-detail {
+    display: none;
+  }
+  section#agent .agent-grid .agent-details {
+    grid-column: span 1;
+    margin-top: 1.5rem;
+    max-width: 100vw;
+  }
+}
